@@ -8,8 +8,8 @@ namespace SRP
         public string Title { get ; }
         public string Author { get ; }
         public string Code { get ;  }
-        public string LibrarySector { get ; set; }
-        public string LibraryShelve { get ; set; }
+    //  public string LibrarySector { get ; set; }
+    //public string LibraryShelve { get ; set; }
 
         public Book(String title, String author, String code)
         {
@@ -18,11 +18,14 @@ namespace SRP
             this.Code = code;
         }
 
-        public void ShelveBook(String sector, String shelve)
-        {
-            this.LibrarySector = sector;
-            this.LibraryShelve = shelve;
-        }
+       // public void ShelveBook(String sector, String shelve)
+       //{
+       //     this.LibrarySector = sector;
+       //     this.LibraryShelve = shelve;
+       // }
 
     }
 }
+
+// Es necesario que Sector y Shelve sean creados como clases diferentes de la clase Libro para que se cumpla 
+// con el principio de RSP
